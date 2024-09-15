@@ -1,9 +1,18 @@
 /* common styles */
+h1 h2 h3 h4 h5 h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 ul,
 ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style-type: none;
 }
-
+img {
+  display: block;
+}
 a {
   text-decoration: none;
 }
@@ -15,7 +24,27 @@ body {
   color: #434455;
   background: #fff;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* header styles */
+
 .page-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -36,6 +65,8 @@ body {
 }
 
 .menu-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -45,13 +76,17 @@ body {
 
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
 .contacts-link {
+  display: block;
+  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
+
 .menu-link:hover,
 .menu-link:focus,
 .contacts-link:hover,
@@ -65,8 +100,35 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
-  /* <!-- section hero --> */
 }
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.head-container {
+  display: flex;
+  align-items: center;
+}
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.logo-header {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
+/*  section hero --> */
+
 .main {
   background-color: #2e2f42;
 }
@@ -81,8 +143,12 @@ body {
 .order-servise-btn:hover,
 .order-servise-btn:focus {
   background-color: #404bbf;
-  /* our  benefits --> */
 }
+.container-hero {
+  margin: auto;
+}
+/* our  benefits --> */
+
 .benefits-list-title {
   font-weight: 500;
   font-size: 20px;

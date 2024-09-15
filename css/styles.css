@@ -144,8 +144,23 @@ body {
 .order-servise-btn:focus {
   background-color: #404bbf;
 }
-.container-hero {
+.main-title {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 48px;
+  max-width: 496px;
+}
+
+.order-servise-btn {
+  display: block;
   margin: auto;
+  border-radius: 4px;
+
+  width: 169px;
+  height: 56px;
+  border: none;
+}
+.container-hero {
 }
 /* our  benefits --> */
 

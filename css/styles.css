@@ -265,8 +265,10 @@ body {
 }
 
 .portfolio-list-item {
-  width: calc((100% - 48px) / 3);
   border: 1px solid #e7e9fc;
+}
+.text-container {
+  width: calc((100% - 48px) / 3);
 }
 .container-portfl {
   border-top: none;
